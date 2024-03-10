@@ -14,11 +14,30 @@ ul {
     margin: 0px;
 }
 
-h2 {
-    text-align: center;
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 100%;
+    margin: 0 0 16px;
 }
 
-.header, .hero-section {
+h2 {
+    text-align: center;
+    margin: 32px
+}
+
+h3 {
+    margin:0 0 4px
+}
+
+button {
+    border-radius: 5px;
+    border-style: none;
+    width: 90px;
+    height: 30px;
+}
+
+.dark-background {
     background-color: #1f2937;
 }
 
@@ -51,28 +70,42 @@ h2 {
     display: flex;
     flex: 1 1 auto;
     padding: 50px 100px;
-}
-
-.hero-section h1 {
-    font-size: 48px;
-    font-weight: 900;
-}
-
-.hero-section img {
     justify-content: center;
-    align-items: center;
-    flex: 1 1 100%;
-    border-style: solid;
+    gap: 50px;
+}
+
+.hero-section > img, .hero-left {
+    height: 250px;
+    width: 400px;
+    flex: 0 0 auto
+}
+
+.hero-left {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.hero-left > div {
+    margin-bottom: auto;
 }
 
 .tile-section {
+    padding: 0px 100px 50px;
     display: flex;
     justify-content: center;
-    gap: 48px
+    gap: 50px;
 }
 
-.tile-section .tile {
+.tile-section > .tile {
     width: 100px;
+}
+
+.tile-subtext {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
 }
 
 .blue-box {
@@ -109,15 +142,27 @@ h2 {
 .quote-attribution {
     margin-left: auto;
     width: fit-content;
+    font-weight: 900;
 }
 
 .call-to-action-section {
+    padding: 50px;
+    background-color: #f9faf8;
+}
+
+.call-to-action {
     padding: 50px 100px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    flex: 1
+    flex: 1;
+    border-radius:5px;
+}
+
+.call-to-action > button {
+    border-style: solid;
+    border-color: #f9faf8;
 }
 
 .footer {
